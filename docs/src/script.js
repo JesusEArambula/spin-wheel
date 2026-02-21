@@ -6,8 +6,8 @@ let confetti = document.querySelector('#confetti');
 const confettiSound = new Audio();
 const clappingSound = new Audio();
 // Change audio file here 👇
-confettiSound.src = "../res/confetti-pop-sound.mp3";
-clappingSound.src = "../res/quiet-short-clap.mp3";
+confettiSound.src = "res/confetti-pop-sound.mp3";
+clappingSound.src = "res/quiet-short-clap.mp3";
 // CND object for blowing confetti
 const blowConfetti = new JSConfetti();
 let value = Math.ceil(Math.random() * 3600);
