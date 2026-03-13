@@ -71,8 +71,20 @@ body {
     height: 50%;
     background: var(--clr);
     transform-origin: bottom right;
-    transform: rotate(calc(25.71deg * var(--i)));
-    clip-path: polygon(0 0, 35% 0, 100% 100%, 0 35%);
+    /*
+    Edit the "calc" within the rotate" function 
+    to change how many students there are in class.
+    Degree is calculated using: 360 / number of students = degree
+    The "--i" is a value given to each students in the HTML file
+    Make sure that each students gets their --i value 
+    depending on how many students there are in the class.
+    */
+    transform: rotate(calc(32.72deg * var(--i)));
+    /*
+    Edit "clip-path" to change size of the colored polygons
+    Change only the second and last value
+    */
+    clip-path: polygon(0 0, 45% 0, 100% 100%, 0 45%);
     display: flex;
     justify-content: center;
     align-items: center;

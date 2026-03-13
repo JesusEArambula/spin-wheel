@@ -8,6 +8,11 @@ const clappingSound = new Audio();
 // Change audio file here 👇
 confettiSound.src = "res/confetti-pop-sound.mp3";
 clappingSound.src = "res/quiet-short-clap.mp3";
+// Lower volume on clapping and confetti sounds
+// Cuase it was a really loud noise...
+confettiSound.volume = .2;
+clappingSound.volume = .2;
+
 // CND object for blowing confetti
 const blowConfetti = new JSConfetti();
 let value = Math.ceil(Math.random() * 3600);
